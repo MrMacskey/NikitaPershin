@@ -1,87 +1,147 @@
-<p><a href="http://example.com">1 абсолютную гиперссылку на главную страницу сайта example.com</a></p>
-<p><a href="https://example.com/">2 https://example.com</a></p>
-<p><a href="ftp://example.com/Temp/file.txt">3 ссылка на файл на сервере FTP без авторизации</a></p>
-<p><a href="ftp://example.com/Temp/file.txt:p:123456q">4 ссылку на файл на сервере FTP с авторизацией</a></p>
-<p><a href="https://github.com/MrMacskey/NikitaPershin.github.io/edit/main/index.html">5 ссылку на фрагмент страницы некоторого сайта</a></p>
-<p><a href="index.html/void">6 ссылку на фрагмент текущей страницы</a></p>
-<p><a href="https://www.google.com/search?q=поиск+гугл&oq=поиск+гугл">7 ссылку с двумя параметрами в URL</a></p>
-<p> 8 список ссылок основной навигации сайта с подписями title;</p>
-<p><a href="#one" title="Первая ссылка">Первая</a></p>
-<p><a href="#two" title="Вторая ссылка">Вторая</a></p>
-<p><a href="#tab/one" title="Третья ссылка">Третья</a></p>
-
-<p><a>9 без href http://example.com</a></p>
-<p><a href="">10 Пустой href</a></p>
-<p><a href="https://example.com" rel="nofollow">11 ссылка, по которой запрещен переход</a><p>
-<p><noindex>12 запрещена индексация </noindex></p>
-
-<p>13 Си́ла — физическая <a target="_blank" href="https://ru.wikipedia.org/wiki/Векторная_величина">векторная величина</a> , являющаяся мерой воздействия на данное тело</p>
-
-
-<map>
-<img src="https://resizer.mail.ru/p/49317597-5778-55f4-b0f6-96d03e1d6280/AQAXBO-LkDgwrMajY-YN0F5IPNcHfyNyv1J-0jqWCuzINKNg5aoLny7upWvSOJvmjZ9eTwYkFzHRHgL8iR09BZTGImg.jpg" width="640" height="420" usemap="#Navigation" />
-<map name="ginco">
-
-<p><a href="https://index.html:1">16 относительную на страницу в текущем каталоге</a></p>
-<p> </p><a href="https://index.html/about/2">17 относительную на страницу в каталоге about</a>
-<p><a href="https://index.html/first">18 относительную на страницу в каталоге уровнем выше текущего </a></p>
-<p><a href="https://index.html/first/second">19 относительную на страницу в каталоге двумя уровнями выше </a> </p>
-<p><a href="/">20 сокращенную на главную</a></p>
-<a href="/asd">21 сокращенную ссылку на внутреннюю</a>
-
 <!DOCTYPE html>
 
 <html>
 
     <head>
-        <title>ФОРМА</title>
+        <meta charset="utf-8" />
+        <title>NikitaPershin</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <header>
+            <img alt="Голова" style="float:left;padding: 10px 20px; width: 120px; height: 120px;"
+                 src="https://github.com/MrMacskey/NikitaPershin.github.io/blob/main/imagine.png?raw=true" />
+            <br />
+            <p id="Основа" style="font-size:50px; font-family : LATHA; text-align:left"><em>Save KID NAMED FINGER</em></p>
+         </header>
+    <br/>
+    <nav>
+        <h1>
+             <a style="font-size:40px">Меню</a>
+         </h1>
+         <h2>
+            <a href="#p1">Ссылки</a>
+            <a href="#p2">Таблица</a>
+            <a href="#p3">Форма</a>
+        </h2>
+    </nav>
+
+    <br/>
+        <div id="p1">
+            <h2>Ссылки</h2>
+        
+            <li><a href="http://example.com">1 абсолютную гиперссылку на главную страницу сайта example.com</a></li>
+            <li><a href="https://example.com/">2 https://example.com</a></li>
+            <li><a href="ftp://example.com/Temp/file.txt">3 ссылка на файл на сервере FTP без авторизации</a></li>
+            <li><a href="ftp://example.com/Temp/file.txt:p:123456q">4 ссылку на файл на сервере FTP с авторизацией</a></li>
+            <li><a href="https://github.com/MrMacskey/NikitaPershin.github.io/edit/main/index.html">5 ссылку на фрагмент страницы некоторого сайта</a></li>
+            <li><a href="index.html/void">6 ссылку на фрагмент текущей страницы</a></li>
+            <li><a href="https://www.google.com/search?q=поиск+гугл&oq=поиск+гугл">7 ссылку с двумя параметрами в URL</a></li>
+
+            <li> 8 список ссылок основной навигации сайта с подписями title;</li>
+            <li><a href="#one" title="Первая ссылка">Первая</a>
+            <a href="#two" title="Вторая ссылка">Вторая</a>
+            <a href="#tab/one" title="Третья ссылка">Третья</a></li>
+
+            <li><a>9 без href http://example.com</a></li>
+            <li><a href="">10 Пустой href</a></li>
+            <li><a href="https://example.com" rel="nofollow">11 ссылка, по которой запрещен переход</a></lip>
+            <li><noindex>12 запрещена индексация </noindex></li>
+
+            <li>13 Си́ла — физическая <a target="_blank" href="https://ru.wikipedia.org/wiki/Векторная_величина">векторная величина</a> , являющаяся мерой воздействия на данное тело</li>
+
+
+            <map>
+            <img src="https://resizer.mail.ru/p/49317597-5778-55f4-b0f6-96d03e1d6280/AQAXBO-LkDgwrMajY-YN0F5IPNcHfyNyv1J-0jqWCuzINKNg5aoLny7upWvSOJvmjZ9eTwYkFzHRHgL8iR09BZTGImg.jpg" width="640" height="420" usemap="#Navigation" />
+            <map name="ginco">
+
+            <li><a href="https://index.html:1">16 относительную на страницу в текущем каталоге</a></li>
+            <li><a href="https://index.html/about/2">17 относительную на страницу в каталоге about</a></li>
+            <li><a href="https://index.html/first">18 относительную на страницу в каталоге уровнем выше текущего </a>/li>
+            <li><a href="https://index.html/first/second">19 относительную на страницу в каталоге двумя уровнями выше </a> </li>
+            <li><a href="/">20 сокращенную на главную</a></li>
+            <li> <a href="/asd">21 сокращенную ссылку на внутреннюю</a></li>
+        </div>
+    <br/>
+         <!--Таблица-->
+     <div id="p2">
+        <h2>Таблица</h2>
+        <table>
+            <tr class="rd">
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr class="yl">
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+            <tr class="rd">
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr class="yl">
+                <td colspan="2">31 - 32 </td>
+                <td>33</td>
+            </tr>
+            <tr class="rd">
+                <td colspan="3"> 41 - 43</td>
+            </tr>
+            <tr class="yl">
+                <td>51</td>
+                <td>52</td>
+                <td>53</td>
+            </tr>
+        </table>
+    </div>
+    <br/>
 
         <h1>ФОРМА</h1>
-
+        <div id="p3">
         <form action="/"
         method="POST">
 
         <label>
-        Имя:<br />
-        <input name="field-name-1"
-        value="" />
+            Имя:<br />
+            <input name="field-name-1"
+            value="" />
         </label><br />
 
         <label>
-        e-mail:<br />
-        <input name="field-email"
-        type="email"
-        placeholder="Введите вашу почту" />
+            e-mail:<br />
+            <input name="field-email"
+            type="email"
+            placeholder="Введите вашу почту" />
         </label><br />
 
         <label>
-        Дата рождения:<br />
-        <input name="field-date"
-        value="2022-09-12"
-        type="date" />
+            Дата рождения:<br />
+            <input name="field-date"
+            value="2022-09-12"
+            type="date" />
         </label><br />
 
         <label>
-        Пол:<br />
-        <select name="field-name-3">
-        <option value="Значение1">Мужской</option>
-        <option value="Значение2" selected="selected">Женский</option>
-        </select>
+            Пол:<br />
+            <select name="field-name-3">
+            <option value="Значение1">Мужской</option>
+            <option value="Значение2" selected="selected">Женский</option>
+            </select>
         </label><br />
         
 
         <label>
-        Сверхспособности:
-        <br />
-        <select name="field-name-4[]"
-        multiple="multiple">
-        <option value="Значение1">бессмертиe</option>
-        <option value="Значение2" selected="selected"> прохождение сквозь стены</option>
-        <option value="Значение3" selected="selected"> левитация</option>
-        </select>
+            Сверхспособности:
+            <br />
+            <select name="field-name-4[]"
+            multiple="multiple">
+            <option value="Значение1">бессмертиe</option>
+            <option value="Значение2" selected="selected"> прохождение сквозь стены</option>
+            <option value="Значение3" selected="selected"> левитация</option>
+            </select>
         </label><br />
 
        Число конечносткй:<br />
@@ -95,10 +155,10 @@
         name="radio-group-1" value="Значение3" />
         3</label>
         <label><input type="radio"
-        name="radio-group-1" value="Значение4" />
+        name="radio-group-1" value="Значение2" />
         4</label>
         <label><input type="radio"
-        name="radio-group-1" value="Значение5" />
+        name="radio-group-1" value="Значение2" />
         5+</label><br />
 
         Узнали? Согласны?:<br />
@@ -109,6 +169,16 @@
        
         <input type="submit" value="Отправить" />
         </form>
+    </div>
+    <br/>
+
+    <footer>
+            <h3>
+               <p> Pershin Nikita </p>
+                Save Finger
+            </h3>
+    </footer>
+    
 
     </body>
 
