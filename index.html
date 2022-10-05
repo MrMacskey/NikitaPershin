@@ -6,175 +6,185 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width initial-scale=1">
         <title>NikitaPershin</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <div class="container" >
-            <div id="header" class="item">
-                <header>
-                    <img src="https://github.com/MrMacskey/NikitaPershin.github.io/blob/main/imagine.png?raw=true" alt="IMAGEGE" />
-                    <h1> SAVE kid named FINGER</h1>                   
-                </header>
+        <div class="container-fluid">
+            <div class="d-flex flex-column" >
+                <div id="header" class="col-sm-12 p-1 order-md-0 mx-auto">
+                    <header>
+                        <img class="p-2 m-0.5 float-left" src="https://github.com/MrMacskey/NikitaPershin.github.io/blob/main/imagine.png?raw=true" alt="IMAGEGE" />
+                        <h1 class="text-center"> SAVE kid named FINGER</h1>                   
+                    </header>
+                </div>
+                <div id="nav" class="col-sm-12 text-center p-1 order-md-1 order-sm-1 mx-auto">
+                    <nav>
+                        <ul id="ul"></ul>
+                            <h1>
+                                <h2 class="text-center">Меню</h2>
+                            </h1>
+                            <h2>
+                                <li class="d-md-inline"><a href="#links">Ссылки</a></li>
+                                <li class="d-md-inline"><a href="#table">Таблица</a></li>
+                                <li class="d-md-inline"><a href="#form">Форма</a></li>
+                            </h2>
+                        </ul>
+                    </nav>
+                </div>
+            <div id="links" class="col-sm-12 col-md-7 p-1 order-md-2 mx-auto">
+                    <h2 class="text-center">Ссылки</h2>
+                    <ol>
+                        <li><a href="http://example.com">абсолютную гиперссылку на главную страницу сайта example.com</a></li>
+                        <li><a href="https://example.com/">https://example.com</a></li>
+                        <li><a href="ftp://example.com/Temp/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
+                        <li><a href="ftp://example.com/Temp/file.txt:p:123456q">ссылку на файл на сервере FTP с авторизацией</a></li>
+                        <li><a href="https://github.com/MrMacskey/NikitaPershin.github.io/edit/main/index.html">ссылку на фрагмент страницы некоторого сайта</a></li>
+                        <li><a href="index.html/void">ссылку на фрагмент текущей страницы</a></li>
+                        <li><a href="https://www.google.com/search?q=поиск+гугл&oq=поиск+гугл">ссылку с двумя параметрами в URL</a></li>
+                        <li>список ссылок основной навигации сайта с подписями title;</li>
+                        <li><a href="#one" title="Первая ссылка">Первая</a>
+                        <a href="#two" title="Вторая ссылка">Вторая</a>
+                        <a href="#tab/one" title="Третья ссылка">Третья</a></li>
+                        <li><a>без href http://example.com</a></li>
+                        <li><a href="">Пустой href</a></li>
+                        <li><a href="https://example.com" rel="nofollow">ссылка, по которой запрещен переход</a></lip>
+                        <li><noindex>запрещена индексация </noindex></li>
+
+                        <li>Си́ла — физическая <a target="_blank" href="https://ru.wikipedia.org/wiki/Векторная_величина">векторная величина</a> , являющаяся мерой воздействия на данное тело</li>
+
+
+                        <map>
+                        <img src="https://resizer.mail.ru/p/49317597-5778-55f4-b0f6-96d03e1d6280/AQAXBO-LkDgwrMajY-YN0F5IPNcHfyNyv1J-0jqWCuzINKNg5aoLny7upWvSOJvmjZ9eTwYkFzHRHgL8iR09BZTGImg.jpg" width="640" height="420" usemap="#Navigation" />
+                        <map name="ginco">
+
+                        <li><a href="https://index.html:1">относительную на страницу в текущем каталоге</a></li>
+                        <li><a href="https://index.html/about/2">относительную на страницу в каталоге about</a></li>
+                        <li><a href="https://index.html/first">относительную на страницу в каталоге уровнем выше текущего </a></li>
+                        <li><a href="https://index.html/first/second">относительную на страницу в каталоге двумя уровнями выше </a> </li>
+                        <li><a href="/">сокращенную на главную</a></li>
+                        <li> <a href="/asd">сокращенную ссылку на внутреннюю</a></li>
+                    </ol>
             </div>
-            <div id="nav" class="item">
-                <nav>
-                    <ul id="ul"></ul>
-                        <h1>
-                            <a>Меню</a>
-                        </h1>
-                        <h2>
-                            <a href="#p1">Ссылки</a>
-                            <a href="#p2">Таблица</a>
-                            <a href="#p3">Форма</a>
-                        </h2>
-                    </ul>
-                </nav>
+                <!--Таблица-->
+            <div id="table" class="col-md-7 col-sm-12 p-1 order-md-3 mx-auto">
+                    <table class="mx-auto">
+                    <caption><h2 class="text-center">Таблица</h2></caption>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <td colspan=3>11-13</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>32</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td colspan=2>42 - 43</td>
+                    </tr>
+                    <tr>
+                        <td>51</td>
+                        <td>52</td>
+                        <td>53</td>
+                    </tr>
+                    </table>
             </div>
-        <div id="p1" class="item2">
-                <h2>Ссылки</h2>
-                <ol>
-                    <li><a href="http://example.com">абсолютную гиперссылку на главную страницу сайта example.com</a></li>
-                    <li><a href="https://example.com/">https://example.com</a></li>
-                    <li><a href="ftp://example.com/Temp/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
-                    <li><a href="ftp://example.com/Temp/file.txt:p:123456q">ссылку на файл на сервере FTP с авторизацией</a></li>
-                    <li><a href="https://github.com/MrMacskey/NikitaPershin.github.io/edit/main/index.html">ссылку на фрагмент страницы некоторого сайта</a></li>
-                    <li><a href="index.html/void">ссылку на фрагмент текущей страницы</a></li>
-                    <li><a href="https://www.google.com/search?q=поиск+гугл&oq=поиск+гугл">ссылку с двумя параметрами в URL</a></li>
-                    <li>список ссылок основной навигации сайта с подписями title;</li>
-                    <li><a href="#one" title="Первая ссылка">Первая</a>
-                    <a href="#two" title="Вторая ссылка">Вторая</a>
-                    <a href="#tab/one" title="Третья ссылка">Третья</a></li>
-                    <li><a>без href http://example.com</a></li>
-                    <li><a href="">Пустой href</a></li>
-                    <li><a href="https://example.com" rel="nofollow">ссылка, по которой запрещен переход</a></lip>
-                    <li><noindex>запрещена индексация </noindex></li>
+                <div id = "form" class="col-sm-12 col-md-7 text-center p-1 order-md-4 mx-auto">
+                    <h2>ФОРМА</h2>
+                    <form action="/"
+                    method="POST">
 
-                    <li>Си́ла — физическая <a target="_blank" href="https://ru.wikipedia.org/wiki/Векторная_величина">векторная величина</a> , являющаяся мерой воздействия на данное тело</li>
+                    <label>
+                        Имя:<br />
+                        <input name="field-name-1"
+                        value="" />
+                    </label><br />
 
+                    <label>
+                        e-mail:<br />
+                        <input name="field-email"
+                        type="email"
+                        placeholder="Введите вашу почту" />
+                    </label><br />
 
-                    <map>
-                    <img src="https://resizer.mail.ru/p/49317597-5778-55f4-b0f6-96d03e1d6280/AQAXBO-LkDgwrMajY-YN0F5IPNcHfyNyv1J-0jqWCuzINKNg5aoLny7upWvSOJvmjZ9eTwYkFzHRHgL8iR09BZTGImg.jpg" width="640" height="420" usemap="#Navigation" />
-                    <map name="ginco">
+                    <label>
+                        Дата рождения:<br />
+                        <input name="field-date"
+                        value="2022-09-12"
+                        type="date" />
+                    </label><br />
 
-                    <li><a href="https://index.html:1">относительную на страницу в текущем каталоге</a></li>
-                    <li><a href="https://index.html/about/2">относительную на страницу в каталоге about</a></li>
-                    <li><a href="https://index.html/first">относительную на страницу в каталоге уровнем выше текущего </a></li>
-                    <li><a href="https://index.html/first/second">относительную на страницу в каталоге двумя уровнями выше </a> </li>
-                    <li><a href="/">сокращенную на главную</a></li>
-                    <li> <a href="/asd">сокращенную ссылку на внутреннюю</a></li>
-                </ol>
-        </div>
-            <!--Таблица-->
-        <div id="table" class="item2">
-                <table>
-                  <caption><h2>Таблица</h2></caption>
-                  <tr>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                  </tr>
-                  <tr>
-                    <td colspan=3>11-13</td>
-                  </tr>
-                  <tr>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                  </tr>
-                  <tr>
-                    <td>31</td>
-                    <td>32</td>
-                    <td>33</td>
-                  </tr>
-                  <tr>
-                    <td>41</td>
-                    <td colspan=2>42 - 43</td>
-                  </tr>
-                  <tr>
-                    <td>51</td>
-                    <td>52</td>
-                    <td>53</td>
-                  </tr>
-                </table>
-        </div>
-            <div id = "p3" class="item2">
-                <h2>ФОРМА</h2>
-                <form action="/"
-                method="POST">
+                    <label>
+                        Пол:<br />
+                        <select name="field-name-3">
+                        <option value="Значение1">Мужской</option>
+                        <option value="Значение2" selected="selected">Женский</option>
+                        </select>
+                    </label><br />
+                    
 
-                <label>
-                    Имя:<br />
-                    <input name="field-name-1"
-                    value="" />
-                </label><br />
+                    <label>
+                        Сверхспособности:
+                        <br />
+                        <select name="field-name-4[]"
+                        multiple="multiple">
+                        <option value="Значение1">бессмертиe</option>
+                        <option value="Значение2" selected="selected"> прохождение сквозь стены</option>
+                        <option value="Значение3" selected="selected"> левитация</option>
+                        </select>
+                    </label><br />
 
-                <label>
-                    e-mail:<br />
-                    <input name="field-email"
-                    type="email"
-                    placeholder="Введите вашу почту" />
-                </label><br />
+                Число конечносткй:<br />
+                    <label><input type="radio" checked="checked"
+                    name="radio-group-1" value="Значение1" />
+                    1</label>
+                    <label><input type="radio"
+                    name="radio-group-1" value="Значение2" />
+                    2</label>
+                    <label><input type="radio"
+                    name="radio-group-1" value="Значение3" />
+                    3</label>
+                    <label><input type="radio"
+                    name="radio-group-1" value="Значение2" />
+                    4</label>
+                    <label><input type="radio"
+                    name="radio-group-1" value="Значение2" />
+                    5+</label><br />
 
-                <label>
-                    Дата рождения:<br />
-                    <input name="field-date"
-                    value="2022-09-12"
-                    type="date" />
-                </label><br />
+                    Узнали? Согласны?:<br />
+                    <label><input type="checkbox" checked="checked"
+                    name="check-1" />
+                    Подпись</label><br />
 
-                <label>
-                    Пол:<br />
-                    <select name="field-name-3">
-                    <option value="Значение1">Мужской</option>
-                    <option value="Значение2" selected="selected">Женский</option>
-                    </select>
-                </label><br />
                 
-
-                <label>
-                    Сверхспособности:
-                    <br />
-                    <select name="field-name-4[]"
-                    multiple="multiple">
-                    <option value="Значение1">бессмертиe</option>
-                    <option value="Значение2" selected="selected"> прохождение сквозь стены</option>
-                    <option value="Значение3" selected="selected"> левитация</option>
-                    </select>
-                </label><br />
-
-            Число конечносткй:<br />
-                <label><input type="radio" checked="checked"
-                name="radio-group-1" value="Значение1" />
-                1</label>
-                <label><input type="radio"
-                name="radio-group-1" value="Значение2" />
-                2</label>
-                <label><input type="radio"
-                name="radio-group-1" value="Значение3" />
-                3</label>
-                <label><input type="radio"
-                name="radio-group-1" value="Значение2" />
-                4</label>
-                <label><input type="radio"
-                name="radio-group-1" value="Значение2" />
-                5+</label><br />
-
-                Узнали? Согласны?:<br />
-                <label><input type="checkbox" checked="checked"
-                name="check-1" />
-                Подпись</label><br />
-
-            
-                <input type="submit" value="Отправить" />
-                </form>
+                    <input type="submit" value="Отправить" />
+                    </form>
+                </div>
+                <div id="footer" class="col-sm-12 text-center p-1 order-md-5 mx-auto">       
+                    <footer>
+                            Pershin Nikita Save Finger
+                    </footer>
+                </div>    
             </div>
-            <div id="footer" class="item">       
-                <footer>
-                         Pershin Nikita Save Finger
-                </footer>
-            </div>    
         </div>
     </body>
 </html>
+
+
 
